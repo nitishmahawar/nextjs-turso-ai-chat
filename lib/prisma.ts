@@ -9,7 +9,7 @@ const prismaClientSingleton = () => {
   });
 
   const adapter = new PrismaLibSQL(libsql);
-  return new PrismaClient();
+  return new PrismaClient({ adapter });
 };
 
 declare global {
