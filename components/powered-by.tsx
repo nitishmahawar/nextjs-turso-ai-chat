@@ -4,6 +4,14 @@ const PoweredBy = () => {
       This project is a prototype for a chatbot. <br /> Built using{" "}
       <a
         className="font-medium underline text-primary"
+        href="https://www.clerk.com/"
+        target="_blank"
+      >
+        Clerk
+      </a>
+      ,{" "}
+      <a
+        className="font-medium underline text-primary"
         href="https://www.prisma.io/"
         target="_blank"
       >
