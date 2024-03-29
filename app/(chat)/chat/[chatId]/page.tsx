@@ -5,7 +5,7 @@ import { Message } from "ai";
 import { notFound, redirect } from "next/navigation";
 import React from "react";
 
-export const runtime = "edge";
+export const dynamic = "force-dynamic";
 
 const Page = async ({ params: { chatId } }: { params: { chatId: string } }) => {
   const { userId } = auth();
