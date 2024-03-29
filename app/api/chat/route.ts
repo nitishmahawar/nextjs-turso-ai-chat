@@ -5,6 +5,8 @@ import { NextResponse } from "next/server";
 import { Chat } from "@prisma/client";
 import prisma from "@/lib/prisma";
 
+export const runtime = "edge";
+
 // Create an OpenAI API client (that's edge friendly!)
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,

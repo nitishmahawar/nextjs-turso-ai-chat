@@ -5,6 +5,8 @@ import { Message } from "ai";
 import { notFound, redirect } from "next/navigation";
 import React from "react";
 
+export const runtime = "edge";
+
 const Page = async ({ params: { chatId } }: { params: { chatId: string } }) => {
   const { userId } = auth();
 
